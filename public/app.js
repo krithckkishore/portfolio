@@ -49,7 +49,7 @@ contactform.addEventListener('submit',(e)=>{
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST','http://122.178.66.218:5000/');
+    xhr.open('POST','https://c08zpvs7-5000.inc1.devtunnels.ms/');
     xhr.setRequestHeader('content-type','application/json');
     xhr.onload = function(){
 

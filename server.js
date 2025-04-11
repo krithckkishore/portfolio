@@ -3,9 +3,7 @@ require('dotenv').config();
 const app = express();
 
 const cors = require('cors');
-app.use(cors({
-    origin: 'https://portfolio-ohp1.onrender.com'
-}));
+app.use(cors());
 
 const nodemailer = require("nodemailer");
 
