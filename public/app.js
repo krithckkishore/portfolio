@@ -49,7 +49,8 @@ contactform.addEventListener('submit',(e)=>{
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST','https://c08zpvs7-5000.inc1.devtunnels.ms/');
+    // xhr.open('POST','https://c08zpvs7-5000.inc1.devtunnels.ms/');
+    xhr.open('POST','http://127.0.0.1:5000/');
     xhr.setRequestHeader('content-type','application/json');
     xhr.onload = function(){
 
