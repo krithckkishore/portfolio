@@ -3,7 +3,7 @@ require('dotenv').config();
 const app = express();
 
 const cors = require('cors');
-app.use(cors( ));
+app.use(cors());
 
 const nodemailer = require("nodemailer");
 
@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 5000;
 
 app.use(express.static('public'));
 app.use(express.json())
-const cors = require('cors');
-app.use(cors());
+
+
 
 app.get('/',(req, res)=>{
-    res.sendFile(__dirname + '/public/index.html')
+    res.sendFile(__dirname + 'public/index.html')
 })
 
 app.post('/', (req, res)=>{
