@@ -15,7 +15,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/',(req, res)=>{
-    res.sendFile(__dirname + 'public/index.html')
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 app.post('/', (req, res)=>{
