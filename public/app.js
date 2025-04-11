@@ -40,30 +40,32 @@ close.addEventListener("click", function(){
     sideBar.classList.add("close-sidebar")
 })
 
-contactform.addEventListener('submit',(e)=>{
+contactform.addEventListener('submit', (e) => {
     e.preventDefault();
+  
     let formdata = {
-        name: name.value,
-        email: email.value,
-        message: message.value
-    }
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST','https://portfolio-backend.onrender.com/');
-    xhr.setRequestHeader('content-type','application/json');
-    xhr.onload = function(){
-
-        console.log(xhr.responseText);
-        if(xhr.responseText == 'success'){
-            alert('Email sent');
-            name.value='';
-            email.value='';
-            message.value='';
-
-        }else{
-            alert('Something went wrong!')
-        }
-    }
-    xhr.send(JSON.stringify(formdata))
-    
-})
+      fullName: name.value,
+      email: email.value,
+      message: message.value
+    };
+  
+    let xhr = new XMLHttpRequest(); 
+    xhr.open('POST', 'https://portfolio-backend.onrender.com/contact'); 
+    xhr.setRequestHeader('Content-Type', 'application/json');
+  
+    xhr.onload = function () {
+      console.log(xhr.responseText);
+      if (xhr.status === 200) {
+        alert('Email sent');
+        name.value = '';
+        email.value = '';
+        message.value = '';
+      } else {
+        console.error('Error response:', xhr.responseText);
+        alert('Something went wrong!');
+      }
+    };
+  
+    xhr.send(JSON.stringify(formdata));
+  });
+  
