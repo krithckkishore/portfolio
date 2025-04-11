@@ -1,6 +1,7 @@
 const video1 = document.getElementById('projectvideo1');
 const video2 = document.getElementById('projectvideo2');
 const video3 = document.getElementById('projectvideo3');
+
 const hoversign = document.querySelector(".hover-sign");
 
 const sideBar = document.querySelector('.sidebar');
@@ -48,7 +49,7 @@ contactform.addEventListener('submit',(e)=>{
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST','/');
+    xhr.open('POST','https://portfolio-backend.onrender.com/');
     xhr.setRequestHeader('content-type','application/json');
     xhr.onload = function(){
 
