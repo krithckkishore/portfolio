@@ -994,7 +994,7 @@ footer h1{
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 740px) {
     header{
         position: fixed;
         height: 50px;
@@ -1080,15 +1080,24 @@ footer h1{
     max-width: 300px;
     margin-left: 10%;
    }
+   .project-info button{
+    margin-top:-10%;
+   }
+  
    .designer{
     top: 15%;
     left: 18%;
    }
-   .coder{
+   .coder {
     top: 60%;
-    left: 18%;
+    left: 20%;
    }
+   .skills-box p{
+    margin-left:-5%;
+    margin-right: 10%;
 
+   }
+ 
    .skills-section{
     margin-top: -20%;
 
@@ -1107,7 +1116,7 @@ footer h1{
    }
    .contact-section{
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 280px;
     margin-bottom: 50px;
    } 
  
