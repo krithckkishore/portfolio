@@ -1009,42 +1009,55 @@ footer h1{
         font-size: 25px;
     }
     .blackhole-box video{
-        margin-top: -16%;
+        margin-top: -14%;
     }
     .hero{
         flex-direction: column;
+        
     }
     .autoblur{
         animation: none;
     }
     .hero-info{
-        bottom: 5%;
+        bottom: -15%;
     }
     .scroll-down{
-        bottom:-5%;
+        bottom: -30%;
     }
     .hero-info h1{
         line-height: 50px;
     }
     .hero-img-box{
-        height: 150px;
-        top: 10%;
-        right: 5%;
+        
+        top: 15%;
+        transform: scale(0.7);
+        margin: -10% auto;
+        left: -4%;
+        
+    }
+    .info-section{
+        margin: 80%;
+        margin-bottom: -20%;
         
     }
     .card video{
         width: 100%;
     }
     .card:nth-child(1) h1{
-        font-size: 20px;
+        font-size: 16px;
         bottom: 32%;
 
     }
+    .card:nth-child(1) p{
+        font-size: 10px;
+        bottom: 1%;
+    }
     .card:nth-child(2) h1{
-        font-size: 20px;
+        font-size: 16px;
         bottom: 40%;
     }
     .card:nth-child(2) p{
+        font-size: 10px;
         bottom: 1%;
     }
   
@@ -1054,27 +1067,28 @@ footer h1{
     .project-card{
         flex-direction: column;
         
-        gap: 30px;
+        gap: 10px;
     }
     .project-info{
         width: 85%;
     }
    .project-info h1{
     text-wrap: nowrap;
-    margin-left: 20%;
+    margin-left: 10%;
    } 
    .project-info p{
     max-width: 300px;
-    margin-left: 20%;
+    margin-left: 10%;
    }
    .designer{
     top: 15%;
     left: 18%;
    }
    .coder{
-    top: 50%;
+    top: 60%;
     left: 18%;
    }
+
    .skills-section{
     margin-top: -20%;
 
@@ -1086,14 +1100,14 @@ footer h1{
    }
 
    .slider{
-    bottom:-10%;
+    bottom:-30%;
    }
    .slider img{
     width: 40%;
    }
    .contact-section{
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 300px;
     margin-bottom: 50px;
    } 
  
@@ -1112,7 +1126,7 @@ footer h1{
   }
   .contact-section .section-title{
     left: 25%;
-    top: 5%;
+    top: -5%;
   }
   .menu-icon{
      display: inline;
